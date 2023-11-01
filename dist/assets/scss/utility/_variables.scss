@@ -1,0 +1,28 @@
+/* Variables 
+-----------------------------------------------------------------*/
+
+:root {
+  --body_color: #1d1d1d;
+  --body_color_sec: #545454;
+
+  --main_color: #f0941f;
+
+  --main_bg: #fff; // #1d1d1d
+  --sub_bg: #f2f2f2; // #181818
+
+  --surface_bg: #f6f6f6;
+  --surface_bg--hover: #c5c5c5;
+
+  --border_color: #b8b8b8;
+  --border_color_sec: #d0d0d0;
+
+  --fade_bg: rgba(0, 0, 0, 0.1);
+}
+
+$body_bg: #1d1d1d;
+$surface_bg: #e2e2e2;
+
+$mobile-xs-screen: 480px;
+$tablet-sm-screen: 768px;
+$desk-md-screen: 992px;
+$desk-lg-screen: 1400px;

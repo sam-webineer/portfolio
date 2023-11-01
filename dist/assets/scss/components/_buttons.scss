@@ -1,0 +1,129 @@
+/* Buttons
+-----------------------------------------------------------------*/
+
+:root {
+  --button-color: var(--body_color);
+  --button-bg: var(--surface_bg);
+  --button-color--hover: var(--body_color);
+  --button-bg--hover: var(--surface_bg--hover);
+
+  --border-button-color: var(--border_color);
+  --border-button-bg: transparent;
+  --border-button-color--hover: var(--body_color);
+  --border-button-bg--hover: var(--surface_bg--hover);
+
+  --button-transition-timing: 0.4;
+}
+
+.contact-fixed-btn {
+  position: fixed;
+  left: -20px;
+  bottom: 120px;
+  transform: rotate(90deg) translateY(50%);
+
+  .btn {
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.btn-presv {
+  perspective: 500px;
+
+  .skew {
+    transform: rotateX(20deg);
+
+    &:hover {
+      transform: rotateX(0deg);
+    }
+  }
+}
+
+.btn {
+  border: 1px solid transparent;
+  background: var(--button-bg);
+  color: var(--button-color);
+  transition-property: color, background-color, border;
+  transition-timing-function: var(--button-transition-timing);
+
+  &:hover {
+    color: var(--button-color--hover);
+    background: var(--button-bg--hover);
+  }
+
+  &.btn-md {
+    padding: 14px 35px;
+  }
+
+  &.btn-sm {
+    padding: 13px 30px;
+    font-size: 13px;
+  }
+
+  &.btn-full {
+    width: 100%;
+    padding: 15px 25px;
+    text-align: center;
+  }
+
+  &.btn-bord {
+    border-color: var(--border-button-color);
+    background: var(--border-button-bg);
+    color: var(--border-button-color);
+
+    &:hover {
+      background: var(--border-button-bg--hover);
+      color: var(--border-button-color--hover);
+
+      span {
+        color: var(--border-button-color);
+      }
+    }
+  }
+
+  // &.btn-bg {
+  //   transition: all 0.4s;
+  //   background: #fff;
+  //   color: var(--button-color);
+
+  //   &:hover {
+  //     background: transparent;
+  //     border-color: #fff;
+  //     color: #fff !important;
+
+  //     .text-dark {
+  //       color: #fff;
+  //     }
+  //   }
+  // }
+
+  &.hover-color {
+    &:hover {
+      background: var(--main_color);
+      border-color: var(--main_color);
+
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  .icon-img {
+    width: 15px;
+  }
+
+  .rolling-text {
+    margin-bottom: -5px;
+  }
+}
+
+.go-more {
+  .arrow-right {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    stroke: #fff;
+    fill: #fff;
+    transform: rotate(-45deg);
+    margin-left: 15px;
+  }
+}
