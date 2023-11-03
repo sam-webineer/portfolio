@@ -228,9 +228,23 @@
 .main-post {
   border-radius: 15px 15px 0 0;
 
+  .tag {
+    color: var(--body_color);
+    font-size: 12px;
+    padding: 4px 15px;
+    background: var(--fade_bg);
+    border-radius: 30px;
+    transition: all 0.4s;
+
+    &:hover {
+      text-decoration: none;
+      background-color: var(--main_color);
+    }
+  }
+
   .caption {
     .gat {
-      a {
+      span {
         padding: 8px 25px;
         border: 1px solid var(--border_color);
         border-radius: 30px;

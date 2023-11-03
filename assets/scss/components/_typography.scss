@@ -168,6 +168,15 @@ a {
   &:hover {
     text-decoration: none;
   }
+
+  &.underline {
+    color: var(--main_color);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 figure {

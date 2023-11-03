@@ -230,6 +230,13 @@ a {
 a:hover {
   text-decoration: none;
 }
+a.underline {
+  color: var(--main_color);
+  text-decoration: underline;
+}
+a.underline:hover {
+  text-decoration: none;
+}
 
 figure {
   margin: 0;
@@ -1732,7 +1739,19 @@ xslide
 .main-post {
   border-radius: 15px 15px 0 0;
 }
-.main-post .caption .gat a {
+.main-post .tag {
+  color: var(--body_color);
+  font-size: 12px;
+  padding: 4px 15px;
+  background: var(--fade_bg);
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.main-post .tag:hover {
+  text-decoration: none;
+  background-color: var(--main_color);
+}
+.main-post .caption .gat span {
   padding: 8px 25px;
   border: 1px solid var(--border_color);
   border-radius: 30px;
@@ -2681,6 +2700,23 @@ xslide
   padding: 10px;
   border: 1px solid var(--border_color);
 }
+.portfolio .item.tbc:after {
+  content: "Portfolio page in progress";
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.6;
+}
+.portfolio .item.tbc .img,
+.portfolio .item.tbc .cont {
+  opacity: 0.3;
+}
 .portfolio .item .img {
   position: relative;
   z-index: 2;
@@ -2704,9 +2740,9 @@ xslide
   color: var(--body_color);
   font-size: 12px;
   padding: 4px 15px;
-  background: rgba(0, 0, 0, 0.03);
+  background: var(--fade_bg);
   border-radius: 30px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   transition: all 0.4s;
 }
 .portfolio .item .cont h6 {
@@ -2717,8 +2753,9 @@ xslide
   height: 45px;
   line-height: 40px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.03);
+  background: var(--fade_bg);
   border-radius: 50%;
+  transition: all 0.4s;
 }
 .portfolio .item .cont .arrow svg {
   stroke: var(--body_color);
@@ -2730,17 +2767,15 @@ xslide
 .portfolio .item:hover .img:after {
   opacity: 1;
 }
-.portfolio .item:hover .cont .tag {
+.portfolio .item:hover .cont .arrow {
   background: var(--main_color);
-  color: #1d1d1d;
 }
 .portfolio .item:hover .cont .arrow svg {
-  stroke: var(--main_color);
-  fill: var(--main_color);
+  transform: rotate(0deg);
 }
 
 .project .info {
-  padding: 40px;
+  padding: 30px;
   position: relative;
   background: var(--surface_bg);
   border-radius: 10px;

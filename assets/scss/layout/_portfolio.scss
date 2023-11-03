@@ -54,6 +54,27 @@
     //   border-radius: 10px;
     // }
 
+    &.tbc {
+      &:after {
+        content: "Portfolio page in progress";
+        position: absolute;
+        top: 42%;
+        transform: translateY(-50%);
+        z-index: 10;
+        pointer-events: none;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        opacity: 0.6;
+      }
+
+      .img,
+      .cont {
+        opacity: 0.3;
+      }
+    }
+
     .img {
       position: relative;
       z-index: 2;
@@ -80,9 +101,9 @@
         color: var(--body_color);
         font-size: 12px;
         padding: 4px 15px;
-        background: rgba(0, 0, 0, 0.03);
+        background: var(--fade_bg);
         border-radius: 30px;
-        margin-bottom: 15px;
+        margin-top: 15px;
         transition: all 0.4s;
       }
 
@@ -95,8 +116,9 @@
         height: 45px;
         line-height: 40px;
         text-align: center;
-        background: rgba(0, 0, 0, 0.03);
+        background: var(--fade_bg);
         border-radius: 50%;
+        transition: all 0.4s;
 
         svg {
           stroke: var(--body_color);
@@ -116,15 +138,18 @@
       }
 
       .cont {
-        .tag {
-          background: var(--main_color);
-          color: #1d1d1d;
-        }
+        // .tag {
+        //   background: var(--main_color);
+        //   color: #1d1d1d;
+        // }
 
         .arrow {
+          background: var(--main_color);
+
           svg {
-            stroke: var(--main_color);
-            fill: var(--main_color);
+            // stroke: var(--main_color);
+            // fill: var(--main_color);
+            transform: rotate(0deg);
           }
         }
       }
@@ -134,7 +159,7 @@
 
 .project {
   .info {
-    padding: 40px;
+    padding: 30px;
     position: relative;
     background: var(--surface_bg);
     border-radius: 10px;
