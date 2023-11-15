@@ -1,0 +1,194 @@
+*,*:before,*:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+html,body{width:100%;margin:0;padding:0;font-family:arial, sans-serif;color:#ffffff;font-family:arial,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;
+}
+
+img {
+	position:absolute;
+	display:block;
+	width:auto;
+	color:#ffffff;
+	-webkit-backface-visibility:hidden;
+	-webkit-transform:translateZ(0) scale(1.0, 1.0);
+	-webkit-perspective:1000;
+	image-rendering:-webkit-optimize-contrast;
+}
+p {
+	font-family:'Livvic',sans-serif;
+	color:#000;
+	font-weight:normal;
+	padding:0;
+	margin:0;
+	letter-spacing:-0.3px;
+	text-align:left;
+	-webkit-backface-visibility:hidden;
+	-webkit-transform:translateZ(0) scale(1.0, 1.0);
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust:none;
+}
+strong,b,.b {
+	font-weight:bold;
+	font-weight:700;
+}
+
+#loader {background:#fff; z-index:9997; overflow:hidden;}
+#spinner {position:absolute; width:30px;height:30px;top:50%;left:50%;margin:-15px 0 0 -15px;}
+#spinner:before,#spinner:after {content:" ";display:block;width:100%;height:100%;margin:1px;border-radius:50%;}
+#spinner:after {border:3px solid #fff;border-color:#178830 transparent transparent transparent;animation:loader 1.2s linear infinite;opacity:0.8;}
+#spinner:before {position:absolute;border:3px solid #d0d0d0;}
+@keyframes loader {0%{-webkit-transform:rotate(0deg);transform:rotate(0deg); }100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
+@-webkit-keyframes loader {0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
+
+/* - - - */
+
+#clicktag, #loader, #banner, #bdr {
+	position:absolute;
+	width:300px;
+	height:600px;
+}
+#clicktag {
+	z-index:9999;
+	cursor:pointer;
+	border:none;
+	outline:none;
+}
+#bdr {
+	z-index:9998;
+	box-sizing:border-box;
+	border:1px solid #d3d3d3;
+}
+#banner {
+	overflow:hidden;
+	background-color:#fff; 
+}
+
+/* - - - */
+
+#img_cont img {
+	z-index:9;
+}
+#person_1 {
+	top:40px;
+}
+#person_2 {
+	top:154px;
+}
+
+
+/*Text*/
+.txt {
+	position:absolute;
+	z-index:200;
+	top:84px;
+	width:100%;
+	font-size:24px;
+	line-height:30px;
+	text-align:center;
+	font-weight:600;
+	color:#178830;
+}
+
+.logo {
+	z-index:100;
+	top:34px;
+	height:23px;
+}
+#logo_0 { left:108px; }
+#logo_1 { left:132px; }
+#logo_2 { left:168px; }
+
+#gilogo {
+	z-index:100;
+	height:22px;
+	top:550px;
+}
+
+#flourish {
+	z-index:8;
+	width:248px;
+	height:248px;
+	top:184px;
+	left:26px;
+}
+	#bih {
+		height:68px;
+		left:105px;
+		top:-35px;
+	}
+	#shield {
+		height:60px;
+		top:95px;
+		left:220px;
+	}
+	#fa {
+		height:78px;
+		top:105px;
+		left:-32px;
+	}
+	#circle {
+		height:248px;
+	}
+	.sticker {
+		z-index:2;
+	}
+
+
+#cta,
+#cta_txt {
+	position:absolute;
+	z-index:100;
+	top:496px;
+	width:150px;
+	text-align:center;
+	overflow:hidden;
+	height:30px;
+	background-color:#006cf4;
+	transition: background 250ms ease;
+	font-size:16px;
+	line-height:30px;
+	font-weight:600;
+	color:#ffffff;
+	border-radius:30px;
+	-webkit-text-size-adjust:none;
+}
+#cta_txt {
+	z-index:102;
+	background-color:transparent;
+}
+#clicktag:hover #cta {
+	background-color:rgb(0,53,120) !important; 
+}
+
+#terms {
+	position:absolute;
+	z-index:120;
+	color:#000;
+	max-width:260px;
+	font-size:9px;
+	line-height:11px;
+	width:100%;
+	left:20px;
+	bottom:20px;
+}
+
+#curve {
+	z-index:10;
+	bottom:0;
+}
+
+#bg {
+	top:0;
+	width:100%;
+	height:520px;
+	z-index:1;
+	background: rgb(203,246,239);
+	background: linear-gradient(0deg, rgba(203,246,239,1) 0%, rgba(238,247,232,1) 100%);
+}
+
+/* - - - */
+
+.hide { opacity:0; }
+.abs { position:absolute; }
+.full { position:absolute; width:100%; height:100%; }
+.auto-x {left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);transform:translateX(-50%);}
+.auto-y {top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);transform:translateY(-50%);}
+.auto-xy {left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);}

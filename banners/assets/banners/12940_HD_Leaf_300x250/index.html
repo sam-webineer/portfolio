@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>HD Leaf - Master - 300x250</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles.css"/>
+</head>
+<body>
+	<div id="stage" class="Stage">
+
+		<div id="bdr" class="css_bdr"></div>
+
+		<!-- Tab -->
+		<div id="tab" class="css_tab">
+			<p id="tab_copy" class="css_tab-copy"><img id="tab_icon" class="css_tab-icon" src="assets/car.svg" />Car insurance</p>
+		</div>
+		
+		<!-- Logo -->
+		<div id="logo_cont" class="css_logo_cont">
+			<img id="logo" class="css_logo" src="assets/hd_logo.png" />
+		</div>
+
+		<!-- ////////// SCENE 1 ////////// -->
+		<div id="sc1_text" class="css_sc1_text css_sc_text hide">
+			<!-- [[[ Static ]]] -->
+			<p id="sc1_text_copy" class="css_sc1_text-copy">Hi there, <br>we're standing by...</p>
+			<!-- [[[ Dynamic ]]] -->
+			<!-- <p id="sc1_text_copy" class="css_sc1_text-copy">Hi [name], <br>we're standing by...</p> -->
+		</div>		
+
+		<!-- ////////// SCENE 2 ////////// -->
+		<div id="sc2_text" class="css_sc2_text css_sc_text hide">
+			<!-- [[[ Static ]]] -->
+			<p id="sc2_text_copy" class="css_sc2_text-copy">to give you a great deal <br>on your car insurance</p>
+			<!-- [[[ Dynamic ]]] -->
+			<!-- <p id="sc2_text_copy" class="css_sc2_text-copy">to give you a great deal <br>on your [make]</p> -->
+		</div>
+		
+		<div id="sc_cta" class="css_sc_cta hide">
+			<!-- [[[ Visited/Started ]]] -->
+			<p>Get quote now</p>
+			<!-- [[[ Completed ]]] -->
+			<!-- <p>Buy now</p> -->
+		</div>
+		
+		<!-- ////////// SCENE IMAGES ////////// -->
+		<div id="sc_imgs" class="css_sc-imgs">
+			<div id="harry" class="css_harry">
+				<img id="h_body" class="css_h_body" src="assets/harry.png" />
+				<img id="h_eyesup" class="css_h_eyesup" src="assets/harry-eyesup.png" />
+				<img id="h_smile" class="css_h_smile" src="assets/harry-smile.png" />
+			</div>
+			<img id="h_sword" class="css_h_sword p3d" src="assets/h_sword.png" />
+			<img id="leaf" class="css_leaf p3d" src="assets/leaf.png" />
+
+			<img id="leaf_bg_1" class="css_leaf_bg css_leaf_bg_1" src="assets/leaf_bg_1.png" />
+			<img id="leaf_bg_2" class="css_leaf_bg css_leaf_bg_2" src="assets/leaf_bg_2.png" />
+			<img id="leaf_bg_3" class="css_leaf_bg css_leaf_bg_3" src="assets/leaf_bg_3.png" />
+			<img id="leaf_bg_4" class="css_leaf_bg css_leaf_bg_4" src="assets/leaf_bg_4.png" />
+			<img id="leaf_bg_5" class="css_leaf_bg css_leaf_bg_5" src="assets/leaf_bg_1.png" />
+			<img id="leaf_bg_6" class="css_leaf_bg css_leaf_bg_6" src="assets/leaf_bg_3.png" />
+			<img id="leaf_bg_7" class="css_leaf_bg css_leaf_bg_7" src="assets/leaf_bg_2.png" />
+			<img id="leaf_bg_8" class="css_leaf_bg css_leaf_bg_8" src="assets/leaf_bg_3.png" />
+			
+			<img id="bg" class="css_bg" src="assets/bg-img.jpg" />
+		</div>
+			
+	</div>
+
+	<script src="https://cdn.flashtalking.com/frameworks/js/gsap/1.17.0/TweenMax.min.js"></script>
+	<script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+	<script src="assets/animation.js"></script>	
+	<script>
+		var stage = myFT.$("#stage");
+		myFT.applyClickTag(stage, 1);
+	</script>
+</body>
+</html>

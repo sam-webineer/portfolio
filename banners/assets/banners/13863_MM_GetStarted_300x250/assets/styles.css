@@ -1,0 +1,131 @@
+@font-face {font-family:'muli';src:url('muli-bold.min.woff') format('woff');font-weight:300;font-style:normal;}
+@font-face {font-family:'muli';src:url('muli-black.min.woff') format('woff');font-weight:bold;font-style:normal;}
+*,*:before,*:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+html,body{width:100%;margin:0;padding:0;font-family:arial, sans-serif;color:#ffffff;font-family:arial,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;
+}
+.stage {
+	width:300px;
+	height:250px;
+	margin:0px auto;
+	padding:0px;
+	position:relative;
+	overflow:hidden;
+	background-color:#62b3e4;
+	cursor:pointer;
+	text-align:left;
+}
+.stage img {
+	position:absolute;
+	display:block;
+	width:auto;
+	color:#ffffff;
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-webkit-backface-visibility:hidden;
+	-webkit-transform:translateZ(0) scale(1.0, 1.0);
+}
+.stage p {
+	font-family:'muli',sans-serif;
+	color:#ffffff;
+	font-weight:normal;
+	text-transform:uppercase;
+	padding:0;
+	margin:0;
+	text-align:left;
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-webkit-backface-visibility:hidden;
+	-webkit-transform:translateZ(0) scale(1.0, 1.0);
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust:none;
+}
+.hide {
+	opacity:0; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0;
+}
+
+/*CTA*/
+.css_cta {
+	position:absolute;
+	z-index:8;
+	top:144px;
+	left:16px;
+	width:138px;
+	text-align:center;
+	overflow:hidden;
+	height:32px;
+	background-color:#665d5b;
+	-webkit-transform-origin:50% 50% 0px;
+		-moz-transform-origin:50% 50% 0px;
+			  transform-origin:50% 50% 0px;
+}
+	.css_cta p {
+		font-size:13px;
+		line-height:31px;
+		text-align:center;
+		font-weight:bold;
+		padding:0 15px;
+		-webkit-text-size-adjust:none;
+	}
+
+/*IMAGE*/
+.css_fr_img {
+	position:absolute;
+	z-index:40;
+	top:0;
+	left:0;
+}
+
+/*TEXT*/
+.css_fr {
+	position:absolute;
+	z-index:30;
+	width:100%;
+	height:100%;
+	padding:14px 16px;
+	max-height:130px;
+	overflow:hidden;
+	top:0;
+	left:0;
+}
+.css_fr p {
+	position:relative;
+	font-size:33px;
+	line-height:33px;
+	font-weight:bold;
+}
+#fr4_txt {
+	font-size:28px;
+	line-height:28px;
+}
+
+/*Footer*/
+.css_footer {
+	position:absolute;
+	z-index:10;
+	width:100%;
+	height:62px;
+	bottom:0;
+	background:#ffffff;
+}
+.css_logo {
+	position:absolute;
+	width:103px;
+	height:32px;
+	top:16px;
+	left:99px;
+}
+
+/* Border */
+.css_bdr {
+	position:absolute;
+	width:100%;
+	height:100%;
+	bottom:0;
+	left:0;
+	z-index:110;
+	border:1px solid #ccc;
+}
+
+<noscript>.hide {opacity:1;filter:alpha(opacity=1);-moz-opacity:1;-khtml-opacity:1;}</noscript>

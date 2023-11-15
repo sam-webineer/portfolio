@@ -1,0 +1,238 @@
+@font-face {font-family:'verlag';src:url('Verlag-Book.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face {font-family:'verlag';src:url('Verlag-Bold.woff') format('woff');font-weight:bold;font-style:normal;}
+*,*:before,*:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+html, body {width:100%;margin:0;padding:0;}
+img {display:block;}
+
+.Stage {
+	width:300px;
+	height:250px;
+	margin:0 auto;
+	/*margin:100px auto 0;*/
+	position:relative;
+	overflow:hidden;
+	background-color:#192126;
+	cursor:pointer;
+	text-align:left;
+}
+.Stage img {
+	position:absolute;
+	display:block;
+	width:auto;
+	color:#ffffff;
+}
+.Stage p {
+	font-family:'Verlag',sans-serif;
+	font-weight:400;
+	padding:0;
+	margin:0;
+	color:#ffffff;
+	text-align:center;
+	-webkit-font-smoothing:antialiased;
+}
+.hide {
+	opacity:0; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0;
+}
+.p3d {
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+}
+
+/* ******************************* 
+	CONSTANTS
+******************************* */
+	.css_tab {
+		position:absolute;
+		z-index:10;
+		height:40px;
+		width:50%;
+		right:0;
+		top:0;
+		background-color:#ef4641;
+		padding:9px 0 0;
+	}
+		p.css_tab-copy {
+			font-size:16px;
+			line-height:18px;
+			text-align:center;
+			vertical-align:top;
+		}
+			img.css_tab-icon {
+				position:relative;
+				width:21px;
+				height:16px;
+				display:inline-block;
+				margin:2px 9px -2px 0;
+			}
+
+	.css_logo_cont {
+		position:absolute;
+		z-index:90;
+		top:0;
+		left:0;
+		width:50%;
+		height:40px;
+		background-color:#ffffff;
+		text-align:center;
+	}
+		img.css_logo {
+			position:relative;
+			display:inline-block;
+			width:111px;
+			height:20px;
+			top:11px;
+		}
+
+	.css_sc_text {
+		position:absolute;
+		z-index:5;
+		top:57px;
+		width:300px;
+		max-width:300px;
+		max-height:108px;
+		overflow:hidden;
+		padding:0 10px 3px;
+	}
+
+/* ******************************* 
+	SCENE 1
+******************************* */
+
+	/* scene 1 text */
+	p.css_sc1_text-copy {
+		position:relative;
+		font-size:24px;
+		line-height:28px;
+		font-weight:700;
+	}
+
+/* ******************************* 
+	SCENE 2
+******************************* */
+
+	/* scene 2 text */
+	p.css_sc2_text-copy {
+		position:relative;
+		font-size:24px;
+		line-height:28px;
+		font-weight:700;
+	}
+
+	/* scene 2 cta */
+	.css_sc_cta {
+		position:absolute;
+		z-index:5;
+		left:69px;
+		top:69px;
+		width:160px;
+		height:36px;
+		-webkit-border-radius:6px;
+			-moz-border-radius:6px;
+				  border-radius:6px;
+		background-color:#ef4641;
+		padding:8px 2px 9px;
+		text-align:center;
+	}
+		.css_sc_cta p {
+			font-weight:700;
+			font-size:18px;
+			line-height:18px;
+		} 
+
+
+	
+/* ******************************* 
+	SCENE IMAGES
+******************************* */
+
+	.css_sc-imgs {
+		position:absolute;
+		z-index:2;
+		bottom:0;
+		left:0;
+		width:300px;
+		height:210px;
+		overflow:hidden;
+		perspective:800px;
+	}
+		/* harry */
+		.css_harry {
+			position:absolute;
+			z-index:2;
+			width:300px;
+			height:133px;
+			bottom:0;
+		}
+		.css_harry img { width:100%; height:100%; }
+		img.css_h_body { z-index:2; }
+		img.css_h_eyesup { z-index:3; }
+		img.css_h_smile { z-index:3; }
+
+		.css_h_sword {
+			z-index:9;
+			width:36px;
+			height:78px;
+			bottom:-80px;
+			/*bottom:-25px;*/
+			left:108px;
+			-webkit-transform-origin:100% 100%;
+				-moz-transform-origin:100% 100%;
+					  transform-origin:100% 100%;
+			-webkit-transform:translate3d(0px, 0, 0px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1);
+				-moz-transform:translate3d(0px, 0, 0px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1);
+					  transform:translate3d(0px, 0, 0px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1);
+		}
+		.css_leaf {
+			z-index:8;
+			width:32px;
+			height:44px;
+			top:138px;
+			left:-40px;
+			/*left:108px;*/
+			-webkit-transform-origin:16px 22px 0px;
+				-moz-transform-origin:16px 22px 0px;
+					  transform-origin:16px 22px 0px;
+			-webkit-transform:translate3d(0px, 0, 0px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1);
+				-moz-transform:translate3d(0px, 0, 0px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1);
+					  transform:translate3d(0px, 0, 0px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1);
+		}
+
+		.css_leaf_bg {z-index:1;left:-60px;}
+		.css_leaf_bg_1 {top:30px;}
+		.css_leaf_bg_2 {top:130px;}
+		.css_leaf_bg_3 {top:10px;}
+		.css_leaf_bg_4 {top:50px;}
+		.css_leaf_bg_5 {top:150px;}
+		.css_leaf_bg_6 {top:80px;}
+		.css_leaf_bg_7 {top:110px;}
+		.css_leaf_bg_8 {top:90px;}
+	
+		img.css_bg {
+			z-index:0;
+			width:300px;
+			height:210px;
+			top:0;
+		}
+		
+/* ******************************* 
+	OTHER
+******************************* */
+
+	/* BORDER */
+	.css_bdr {
+		position:absolute;
+		width:300px;
+		height:40px;
+		top:0;
+		left:0;
+		z-index:100;
+		border:1px solid #d1d1d1;
+		border-bottom:none;
+	}
+
+<noscript>
+.hide {
+	opacity:1; filter:alpha(opacity=1); -moz-opacity:1; -khtml-opacity:1;
+}
+</noscript>
